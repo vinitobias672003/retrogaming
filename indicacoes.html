@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pag_ini.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="indicacoes.js">
+
+    
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+		<table>
+			<tr>
+				<td><a href="pag_ini.html" class="nome">Retrogaming minha Vida</a></td>
+        <td><a href="list_consoles.html" class="nome">Consoles</a></td>
+        <td hidden="true"><a href="indicacoes.html" class="nome">Indicações</a></td>
+        <td><a href="list_jogos.html" class="nome">Jogos</a></td>
+        <!-- <td><a href="sobre.html" class="nome">Sobre</a></td> -->
+      </tr>
+		</table>
+	</header>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/ps1_lateral (1).jpg" class="d-block w-100" alt="..." height="399" width="1068" padding-left= 35px padding-right= 35px >
+            <!-- width="500" height="300" -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ps1</h5>
+              <p> 5° geração</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/ps2_lateral.jpg" class="d-block w-100" alt="..." height="300">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ps2</h5>
+              <p> 6° geração</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/ps3_lateral.jpg" class="d-block w-100" alt="..." height="300">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ps3</h5>
+              <p> 7° geração</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/ps4_lateral.jpg" class="d-block w-100" alt="..." height="300">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ps4</h5>
+              <p> 8° geração</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev" onclick="hidden('1')">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next" onclick="hidden('-1')">   
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+      <!-- <div id="tabela_ps1">  
+        <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="path/to/image1.jpg" alt="Image 1" width="50" height="50"></td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+            <td>Row 1, Col 4</td>
+            <td>Row 1, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image2.jpg" alt="Image 2" width="50" height="50"></td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image3.jpg" alt="Image 3" width="50" height="50"></td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image4.jpg" alt="Image 4" width="50" height="50"></td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image5.jpg" alt="Image 5" width="50" height="50"></td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image6.jpg" alt="Image 6" width="50" height="50"></td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image7.jpg" alt="Image 7" width="50" height="50"></td>
+            <td>Row 7, Col 2</td>
+            <td>Row 7, Col 3</td>
+            <td>Row 7, Col 4</td>
+            <td>Row 7, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image8.jpg" alt="Image 8" width="50" height="50"></td>
+            <td>Row 8, Col 2</td>
+            <td>Row 8, Col 3</td>
+            <td>Row 8, Col 4</td>
+            <td>Row 8, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image9.jpg" alt="Image 9" width="50" height="50"></td>
+            <td>Row 9, Col 2</td>
+            <td>Row 9, Col 3</td>
+            <td>Row 9, Col 4</td>
+            <td>Row 9, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image10.jpg" alt="Image 10" width="50" height="50"></td>
+            <td>Row 10, Col 2</td>
+            <td>Row 10, Col 3</td>
+            <td>Row 10, Col 4</td>
+            <td>Row 10, Col 5</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+      <div id="tabela_ps2">  
+        <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="path/to/image1.jpg" alt="Image 1" width="50" height="50"></td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+            <td>Row 1, Col 4</td>
+            <td>Row 1, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image2.jpg" alt="Image 2" width="50" height="50"></td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image3.jpg" alt="Image 3" width="50" height="50"></td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image4.jpg" alt="Image 4" width="50" height="50"></td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image5.jpg" alt="Image 5" width="50" height="50"></td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image6.jpg" alt="Image 6" width="50" height="50"></td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image7.jpg" alt="Image 7" width="50" height="50"></td>
+            <td>Row 7, Col 2</td>
+            <td>Row 7, Col 3</td>
+            <td>Row 7, Col 4</td>
+            <td>Row 7, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image8.jpg" alt="Image 8" width="50" height="50"></td>
+            <td>Row 8, Col 2</td>
+            <td>Row 8, Col 3</td>
+            <td>Row 8, Col 4</td>
+            <td>Row 8, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image9.jpg" alt="Image 9" width="50" height="50"></td>
+            <td>Row 9, Col 2</td>
+            <td>Row 9, Col 3</td>
+            <td>Row 9, Col 4</td>
+            <td>Row 9, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image10.jpg" alt="Image 10" width="50" height="50"></td>
+            <td>Row 10, Col 2</td>
+            <td>Row 10, Col 3</td>
+            <td>Row 10, Col 4</td>
+            <td>Row 10, Col 5</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+      <div id="tabela_ps3">  
+        <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="path/to/image1.jpg" alt="Image 1" width="50" height="50"></td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+            <td>Row 1, Col 4</td>
+            <td>Row 1, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image2.jpg" alt="Image 2" width="50" height="50"></td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image3.jpg" alt="Image 3" width="50" height="50"></td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image4.jpg" alt="Image 4" width="50" height="50"></td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image5.jpg" alt="Image 5" width="50" height="50"></td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image6.jpg" alt="Image 6" width="50" height="50"></td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image7.jpg" alt="Image 7" width="50" height="50"></td>
+            <td>Row 7, Col 2</td>
+            <td>Row 7, Col 3</td>
+            <td>Row 7, Col 4</td>
+            <td>Row 7, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image8.jpg" alt="Image 8" width="50" height="50"></td>
+            <td>Row 8, Col 2</td>
+            <td>Row 8, Col 3</td>
+            <td>Row 8, Col 4</td>
+            <td>Row 8, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image9.jpg" alt="Image 9" width="50" height="50"></td>
+            <td>Row 9, Col 2</td>
+            <td>Row 9, Col 3</td>
+            <td>Row 9, Col 4</td>
+            <td>Row 9, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image10.jpg" alt="Image 10" width="50" height="50"></td>
+            <td>Row 10, Col 2</td>
+            <td>Row 10, Col 3</td>
+            <td>Row 10, Col 4</td>
+            <td>Row 10, Col 5</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+      <div id="tabela_ps4">  
+        <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="path/to/image1.jpg" alt="Image 1" width="50" height="50"></td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+            <td>Row 1, Col 4</td>
+            <td>Row 1, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image2.jpg" alt="Image 2" width="50" height="50"></td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image3.jpg" alt="Image 3" width="50" height="50"></td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image4.jpg" alt="Image 4" width="50" height="50"></td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image5.jpg" alt="Image 5" width="50" height="50"></td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image6.jpg" alt="Image 6" width="50" height="50"></td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image7.jpg" alt="Image 7" width="50" height="50"></td>
+            <td>Row 7, Col 2</td>
+            <td>Row 7, Col 3</td>
+            <td>Row 7, Col 4</td>
+            <td>Row 7, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image8.jpg" alt="Image 8" width="50" height="50"></td>
+            <td>Row 8, Col 2</td>
+            <td>Row 8, Col 3</td>
+            <td>Row 8, Col 4</td>
+            <td>Row 8, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image9.jpg" alt="Image 9" width="50" height="50"></td>
+            <td>Row 9, Col 2</td>
+            <td>Row 9, Col 3</td>
+            <td>Row 9, Col 4</td>
+            <td>Row 9, Col 5</td>
+          </tr>
+          <tr>
+            <td><img src="path/to/image10.jpg" alt="Image 10" width="50" height="50"></td>
+            <td>Row 10, Col 2</td>
+            <td>Row 10, Col 3</td>
+            <td>Row 10, Col 4</td>
+            <td>Row 10, Col 5</td>
+          </tr>
+        </tbody>
+      </table></div> -->
+
+      <div id="tabela_ps1">tabela_ps1</div>
+      <div id="tabela_ps2">tabela_ps2</div>
+      <div id="tabela_ps3">tabela_ps3</div>
+      <div id="tabela_ps4">tabela_ps4</div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

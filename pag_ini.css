@@ -1,0 +1,30 @@
+.conteiner {
+    display: flex;
+    text-align: center;
+}
+
+.console {
+    text-align: center;
+    width: 50%; 
+    height: 70%;
+
+}
+
+.cabecalho{
+	height: 13vh;
+	background: #003399;
+}
+
+.cabecalho table{
+	width: 100%;
+	height: 100%;
+}
+
+.nome{
+	font-size: 25px;
+    font-family: 'Game Over', cursive;
+	font-weight: bold;
+	padding: 0px  0px  0px 15px;
+	color:rgb(0, 0, 0);
+	text-decoration: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pag_ini.css"> 
+    <!-- só mative o pag_ini por conta do cabeçalho, não tive tempo de extrair da para um fonte especifico só dele -->
+    <link rel="stylesheet" type="text/css" href="list_jogos.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Lsita de jogos pessoal</title>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+		<hr>
+        <table>
+			<tr>
+				<td><a href="pag_ini.html" class="nome">Retrogaming minha Vida</a></td>
+                <td><a href="list_consoles.html" class="nome">consoles</a></td>
+                <td><a href="indicacoes.html" class="nome">Indicações</a></td>
+            </tr>
+		</table>
+        </hr> 
+	</header>
+
+	<main class="conteiner">
+		<div class="conteudo">
+            
+            <form id="gameForm">
+                <label for="nome">Nome do Jogo</label>
+                <input type="text" id="nome" name="nome" required>
+            
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero" required>
+                  <option value="acao">Ação</option>
+                  <option value="aventura">Aventura</option>
+                  <!-- Adicione mais opções aqui -->
+                </select>
+            
+                <label for="geracao">Geração</label>
+                <select id="geracao" name="geracao" required>
+                  <option value="ps1">5ª geração - Ps1</option>
+                  <option value="ps2">6ª geração - Ps2</option>
+                  <option value="ps3">7ª geração - Ps3</option>
+                  <option value="ps4">8ª geração - Ps4</option>
+                </select>
+            
+                <button type="submit">Cadastrar Jogo</button>
+              </form>
+            </div>
+		</div>
+	</main>
+
+    <script src="list_jogos.js"></script>
+
+</body>
+</html>
