@@ -1,5 +1,5 @@
 # retrogaming
-O tema de um projeto pessoal que decidi usar para fazer um trabalho da faculdade, que manteirei evoluindo de forma extensa, já que sou um grande fã boy da PS.
+O tema de um projeto pessoal que decidi usar para fazer um trabalho da faculdade, aonde será uma base para testar a adição de API's e a criação de um blog (visando especialmente o acumulo de conhecimento, para depois espalhar o mesmo, que manteirei evoluindo de forma extensa, e também aproveitando meu gosto por consoles e jogos.
 
 # PlayStation Retro Games Collection
 
